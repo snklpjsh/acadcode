@@ -1,0 +1,5 @@
+git init: This command creates an empty Git repository - basically a .git directory with subdirectories for objects,heads,tags, and template files.
+git add:  This command updates the index using the current content of the directory. It typically adds the current content of existing paths as a whole, but with some options it can also be used to add content with only part of the changes made to the working tree files applied, or remove paths that do not exist in the working directory.
+git status: This command is used to show working project  status.
+git commit: The "commit" command is used to save your changes to the local repository.
+git push - To upload project to the cloud (GitHub)
