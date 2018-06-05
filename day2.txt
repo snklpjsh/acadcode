@@ -1,0 +1,18 @@
+1.print ('hello this is sankalp');    #question 1
+2.print ("acad"+"view");              #question 2
+3.x=int(input())                      #let x=5
+  y=int(input())                      #let y=6
+  z=int(input())                      #let z=9
+  print('%d' %x)
+  print('%d' %y)
+  print('%d' %z)
+4.print("let,s get started")
+5.s=input()               #enter s="acadview"
+  course=input()          #enter course="python" 
+  fees=int(input())       #enter fees=5000
+  print(s)
+  print(course)
+  print('%d' %fees)
+6.name="Tony stark"
+  salary=1000000
+  print('%s''%d')%(name,salary)
