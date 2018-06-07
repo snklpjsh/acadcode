@@ -1,0 +1,61 @@
+#q1.       >>> s=('5','hi','5.0','[5,9,6])
+	   >>> s=('5','hi','5.0','[5,9,6]')       
+	   >>> len(s)
+       
+           #output:4
+ 
+#q2.       >>> max(s)
+       
+	#output: 'hi'
+	   >>> min(s)
+       
+        #output: '5
+#q3.	s=(5,6,7,9)
+	>>> m=0
+	>>> for x in s:
+            m=s[0]*x 
+       
+	>>> print(m)
+       
+	45
+
+
+
+#q4.   1.          for union 
+                >>> r={6,8,3,1,2,9}
+       
+		>>> s={5,6,8,9,7}
+       
+		>>> print(s.union(r))
+       
+		{1, 2, 3, 5, 6, 7, 8, 9}
+
+        2.      for difference 
+		
+		print(s.difference(r))  
+		#output:{5, 7}
+
+        3.      for  intersection
+               >>>print(s.intersection(r))
+       
+                #output:{8, 9, 6}
+
+#q5.   s={'sankalp':99,'nitin':44,'rishav':88,'akash':22}
+       
+
+#q6.    >>>sort= sorted(s.items(), key=lambda x: x[1])
+		      
+	>>> print (sorted_d)
+		      
+	#output:[('akash', 22), ('nitin', 44), ('rishav', 88), ('sankalp', 99)]
+	>>>
+#q7.     def char_frequency(s):
+    dict = {}
+    for n in s:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(char_frequency('mississippi')) 
