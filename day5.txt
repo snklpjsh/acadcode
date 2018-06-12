@@ -1,0 +1,52 @@
+#q1.	year = int(input('Enter the year : '))
+	if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    	                        print("leap year")
+
+	else :
+	      print("Not a leap year")
+#q2.	length= int(input('Enter the length : '))
+	breadth = int(input('Enter the breadth : '))
+		if length == breadth:
+    		print("it is a square")
+		else:
+    		print("it is a rectangle")
+
+
+#q3.   age1= int(input('Enter the 1st person age : '))
+       age2= int(input('Enter the 2nd person age : '))
+       age3= int(input('Enter the 3rd person age : '))
+	if age1 > age2 and age1 > age3 and age2 > age3:
+    	   print("1st person is oldest and 3rd person is youngest")
+	elif age1 > age2 and age1 > age3 and age3 > age2:
+             print("1st person is oldest and 2nd person is youngest")
+	elif age2 > age3 and ag2 > age1 and age1 > age3:
+            print("2nd person is oldest and 3rd person is youngest")
+	elif age2 > age3 and ag2 > age1 and age3 > age1:
+            print("2nd person is oldest and 1st person is youngest")
+	elif age3 > age1 and age3 > age2 and age2 > age1:
+            print("3rd person is oldest and 1st person is youngest")
+	elif age3 > age1 and age3 > age2 and age1 > age2:
+            print("3rd person is oldest and 1st person is youngest")
+		
+
+#q4.	points= int(input('Enter the points,must be under 200 : '))
+
+	if points < 50:
+    	 print("Sorry! No prize this time.")
+
+	if points >= 51 and points <= 150:
+ 	   print("Congratulations! You won a [WOODEN DOG]!")
+
+	elif points >=151 and points <= 180:
+           print("Congratulations! You won a [BOOK]!")
+
+	elif points >= 181 and points <=200:
+    	   print("Congratulations! You won a [CHOCOLATES]!")
+	else:
+           print("wrong points")
+
+#q5. quantity= int(input('Enter the quantity : '))
+	if quantity * 100 > 1000:
+    	print ("Cost is", ((quantity * 100) - (.1 * quantity * 100)))
+	else:
+    	print ("Cost is", quantity * 100)
