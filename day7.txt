@@ -1,0 +1,49 @@
+#q1.
+	def areac(r):
+	    ar=3.14*r*r
+	    print(ar)
+	areac(5)
+#q2.	def perfect(n):
+        	a,s=1,0
+        	while(a<n):
+             	if(n%a==0):
+                  	s=s+a
+                  	a=a+1
+
+	        if (s==n):
+	              print("The given number is a perfect number")
+        	else:
+            		print('given number  is not a perfect number')
+	perfect(6)
+
+#q3.  def table(num, index):
+    	print (num * index)
+    	index = index + 1
+    	if index <= 20:
+        	table(num, index)
+      table(12, 1)
+
+#q4.  def power(b,e):
+    	if(e==1):
+        	return(b)
+    	if(e!=1):
+        	return(b*power(b,e-1))
+      base=int(input("Enter base"))
+      exp=int(input("Enter exponential value"))
+      print("Result:",power(b,e))
+
+#q5.
+d=dict()
+def factorial(n):
+    if(n <= 1):
+        return 1
+    else:
+        x=n*factorial(n-1)
+        d[0]=1
+        d[1]=1
+        d[n]=x
+        return(n*factorial(n-1))
+n = int(input("Enter number:"))
+print("Factorial:")
+print(factorial(n))
+print(d)
