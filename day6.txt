@@ -1,10 +1,10 @@
 #q1.
 	n = []
-w = int(input('Enter how many elements you want'))
-for i in range(0,w):
+	w = int(input('Enter how many elements you want'))
+	for i in range(0,w):
 				x = int(input('Enter the numbers into the array'))
 				n.append(x)
-print(n)
+	print(n)
 
 #q2. 
        t=True
@@ -56,12 +56,12 @@ print(n)
 		    print('*',end="")
 	       print()
 #q7.
-s={'sankalp':99,'nitin':44,'rishav':88,'akash':22}
-k=int(input('give value'))
-for i in s.values():
-	if i==k:
-		n=s[k]
-		print(n)
+	s={'sankalp':99,'nitin':44,'rishav':88,'akash':22}
+	k=int(input('give value'))
+	for i in s.values():
+		if i==k:
+			n=s[k]
+	print(n)
 #q8.
 
 	n = []
