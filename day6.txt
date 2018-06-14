@@ -1,0 +1,79 @@
+#q1.
+	n = []
+w = int(input('Enter how many elements you want'))
+for i in range(0,w):
+				x = int(input('Enter the numbers into the array'))
+				n.append(x)
+print(n)
+
+#q2. 
+       t=True
+       while(t==True):
+       print('yes')
+
+#q3.   n = []
+       s = []
+       w = int(input('Enter how many elements you want'))
+	      for i in range(0,w):
+    		    x = int(input('Enter the numbers into the array'))
+    	            m=x*x 
+                    n.append(x)
+                    s.append(m)
+	print(n)
+        print(s)
+
+#q4.
+	myl=[4,'sankalp',1.5]
+	from collections import defaultdict
+	d=defaultdict(list)
+	for x in myl:
+		d[type(x)].append(x)
+	s= d[int]
+	l= d[str]
+	z= d[float]
+	print(s)
+	print(z)
+	print(l) 
+
+
+
+#q5.
+
+  for n in range(0,101):
+	for i in range(2,n):
+		if(n%i==0):
+			break;
+		else:
+			print(n)
+			break   
+
+
+#q6.
+	n=0
+        for i in range(5):
+	       n=n+1
+	       for j in range(0,n-1):
+		    print('*',end="")
+	       print()
+#q7.
+s={'sankalp':99,'nitin':44,'rishav':88,'akash':22}
+k=int(input('give value'))
+for i in s.values():
+	if i==k:
+		n=s[k]
+		print(n)
+#q8.
+
+	n = []
+	w = int(input('Enter how many elements you want'))
+	for i in range(0, w):	
+	    x = int(input('Enter the numbers into the array'))
+	    n.append(x)
+	print(n)
+	f = int(input('enter no. to be searched'))
+	for k in n:
+	    	if f in n:
+ 	       del (n[k])
+	print(n)
+
+	
