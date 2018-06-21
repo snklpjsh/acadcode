@@ -1,0 +1,45 @@
+#q1. 
+       working with date and time in python in known as time tuple.
+
+
+
+#q2.	import time
+	## 12 hour format ##
+	print(time.strftime("%I:%M:%S"))
+
+#q3.	import datetime
+	now = datetime.datetime.now()
+	print ("exact month:")
+	print (now.strftime("%m"))
+
+#q4.	import datetime
+	now = datetime.datetime.now()
+	print ("exact month:")
+	print (now.strftime("%a"))
+
+#q5.    import datetime
+	now = datetime.datetime.now()
+	print ("exact month:")
+	print (now.strftime("%d"))
+
+#q6.    import time;
+	localtime = time.asctime( time.localtime(time.time()) )
+	print ("Local current time :", localtime)
+
+
+#q7.	import math as m
+	x=int(input("enter the no."))
+	print(m.factorial(x))
+
+#q8.    import math as m
+	x=int(input("enter the 1no."))
+	print(x)
+	y=int(input("enter the second no."))
+	print(y)
+	print(m.gcd(x,y))
+
+#q9.    a.import os
+	  print(os.getcwd())
+        b. import os
+	   print(os.name)
+          
