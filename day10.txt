@@ -1,0 +1,103 @@
+#q1. class animal:
+     	def animal_attribute(self):
+        	"""
+        	 this is used to define the attribute
+        	"""
+        	print('the atriibute is called:')
+
+     class tiger (animal):
+    	pass
+     s1=tiger()
+     s1.animal_attribute()
+
+
+#q2.   A B
+       A B
+
+#q3.	class cop:
+	    def __init__(self,name,age,work,experience,designation):
+	        self.n=name
+	        self.a=age
+	        self.w=work
+	        self.e=experience
+	        self.d=designation
+
+	    def add(self):
+	        print("enter the data according to data name,age,work,experienceand designtion if you don't want to add  add " "")
+	        st=str(input("enter the data you want to add in name"))
+	        n1=self.name+st
+	        ag=int(input("enter the age you want to add"))
+	        a1=self.a+a1
+	        wr=int(input("enter the work experence you want to add"))
+	        w1=self.w+wr
+	        ex=int(input("enter the year you want to add in your experience"))
+	        e1=self.e+ex
+	        de=str(input("enter the designation you want to add"))
+        	d1=self.d+de
+ 	       print("the new  data after adding  name={},age={},work={},experience={},dsignation={}" .\
+	              format(n1,a1,w1,e1,d1))
+
+	    def display(self):
+	                 print("the new  data after adding  name={},age={},work={},experience={},dsignation={}". \
+	                       format(self.n, self.a, self.w, self.e, self.d))
+	    def update(self):
+	        print(
+	            "enter the data according to data name,age,work,experienceand designtion if you don't want to add  add " "")
+	        st = str(input("enter the data you want to updte in name"))
+	        self.n = st
+	        ag = int(input("enter the age you want to add"))
+	        self.a =a1
+	        wr = int(input("enter the work experence you want to add"))
+	        self.w= wr
+	        ex = int(input("enter the year you want to add in your experience"))
+	        self.e =ex
+	        de = str(input("enter the designation you want to add"))
+	        self.d= de
+	        print("the new  data after adding  name={},age={},work={},experience={},dsignation={}". \
+	              format(self.n,self.a,self.w,self.e,self.d))
+
+	class mission(cop):
+	    def add_mission_detail(self):
+	        pass
+	s1=cop('sankalp',20,5,6,'lit')
+	s2=mission('sankalp',20,25,6,'maj')
+	s2.add()
+
+#q4.
+
+	class shape:
+	    def __init__(self,breadth,length):
+	        self.b=breadth
+	        self.l=length
+	    def area(self):
+	              area=self.b * self.l
+	              print(area)
+	class rect(shape):
+	    pass
+	class square(shape):
+	    pass
+
+	print("enter the same value if square else different ")
+	s=rect(10,11)
+	s.area()
+	s=square(10,10)
+	s.area()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
