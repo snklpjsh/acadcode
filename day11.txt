@@ -1,0 +1,56 @@
+#q1.
+        from threading import *
+	import time
+	def display():
+	    time.sleep(5)
+	    print("this is my thread")
+
+	t=Thread(target=display)
+	t.start()
+	print("process id being executing and take 5 sec")
+
+
+#q2.	from threading import *
+	import time
+	def display():
+	    for t in range(1,11):
+	        time.sleep(1)
+	        print(t)
+	t=Thread(target=display)
+	t.start()
+	print("process id being executing")
+
+
+#q3.	from threading import *
+	import time
+	c=[2,3,4,5,6,7]
+	n=int(input("enter the no. of elements in list"))
+	def display():
+	    k=0
+	    for t in range(0,n)
+	        k=k+2
+	        time.sleep(k)
+	        print(c[t])
+	t=Thread(target=display)
+	t.start()
+	print("process id being executing")
+#q4.	from threading import *
+	import time
+	n=int(input("enter the no of factorial you want"))
+	def factorial(n):
+	    num=n
+	    if num < 1:
+	        return 1
+	    else:
+	        return num * factorial(num - 1)
+
+
+	t = Thread(target=factorial,args=(n,))
+	t.start()
+	print("process id being executing")
+	print(factorial(n))
+
+
+
+
+
