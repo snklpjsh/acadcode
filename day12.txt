@@ -1,0 +1,73 @@
+#q1.
+   	a=3
+	try:
+	    a<4
+	    a=a/(a-3)
+	    print(a)
+	except:
+	    print("wrong")
+
+#q2.
+	l=[1, 2, 3]
+	i = 3
+	try:
+	    if i<3:
+	        print(l[i])
+	    else:
+	         raise ValueError
+	except ValueError:
+	    print("index error")
+  
+#q3.
+       Output:
+                An Exception.
+              after that exception is not raised
+
+#q4.
+
+       output:
+                -5.0
+		a/b result in 0
+
+#q5.  1.
+          for import error
+	try:
+	    import math
+	    '''enter the package name here '''
+	except:
+	    print('wrong package enter')
+      
+
+	2.   for value error
+	try:
+   	    x=int(input("enter a integer value"))
+	except:
+	    print("you've entered a wrong value")
+
+      3.	
+
+		index error
+		l=[1, 2, 3]
+		i = 3
+		try:
+    		if i<3:
+        		print(l[i])
+   		else:
+         		raise ValueError
+		except ValueError:
+    		print("index error")
+
+
+#q6.	s=0
+	while(s==0):
+    	age=int(input("enter the age"))
+    	try:
+        	 if age>18:
+        	       print("correct choice")
+        	       s=1
+        	 else:
+        	     raise ZeroDivisionError
+
+	    except ZeroDivisionError:
+	        print("wrong age enter the age greater than 18")
+
