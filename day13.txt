@@ -1,31 +1,31 @@
-q1 with open('q.txt') as f:
+q1 with open('g.txt') as f:
    	data = f.readlines()
    lastline = data[-1]
    n=int(input("enter number of lines "))
-   tail = data[-n:]
+   tail=data[-n:]
 
 q2 from collections import Counter
-   def word_count('q.txt','r'):
-   	with open('q.txt') as f:
+   def word_count('g.txt','r'):
+   	with open('g.txt') as f:
                 return Counter(f.read().split())
-   print("Number of words in the file :",word_count("test.txt"))
+   print("Number of words in the file :",word_count("s.txt"))
 
-q3 with open("q.txt") as f:
-   	with open("out.txt", "w") as f1:
-        	for line in f:
-            		f1.write(line)
+q3 with open("g.txt") as f1:
+   	with open("out.txt", "w") as f2:
+        	for line in f1:
+            		f2.write(line)
 
-q4 with open('q.txt') as f1, open('test.txt') as f2:
+q4 with open('g.txt') as f1, open('test.txt') as f2:
    	for line1, line2 in zip(f1, f2):
         	print(line1+line2)
 
-q5 f=open("R.txt", "w")
+q5 f=open("d.txt", "w")
    for i in range(10): 
-   	line = str(random.randint(1, 100))
+   	line = str(random.randint(0, 100))
     	f.write(line)
     	print(line)
    f.close()
-   f=open("R.txt", "r")
+   f=open("d.txt", "r")
    column=[]
    data=f.read()
    for line in data:
