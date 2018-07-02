@@ -1,35 +1,33 @@
-q1 with open('g.txt') as f:
-   	data = f.readlines()
-   lastline = data[-1]
-   n=int(input("enter number of lines "))
-   tail=data[-n:]
+#q1.
 
-q2 from collections import Counter
-   def word_count('g.txt','r'):
-   	with open('g.txt') as f:
-                return Counter(f.read().split())
-   print("Number of words in the file :",word_count("s.txt"))
+	import re
+	pattern='(\w+)@([A-Z0-9]+)\.(com)'
+	emails = "zuck26@facebook.com page33@google.com jeff42@amazon.com"
+	l=re.findall(pattern, emails, flags=re.IGNORECASE)	
+	print(l)
 
-q3 with open("g.txt") as f1:
-   	with open("out.txt", "w") as f2:
-        	for line in f1:
-            		f2.write(line)
 
-q4 with open('g.txt') as f1, open('test.txt') as f2:
-   	for line1, line2 in zip(f1, f2):
-        	print(line1+line2)
 
-q5 f=open("d.txt", "w")
-   for i in range(10): 
-   	line = str(random.randint(0, 100))
-    	f.write(line)
-    	print(line)
-   f.close()
-   f=open("d.txt", "r")
-   column=[]
-   data=f.read()
-   for line in data:
-   	column.append(line.split("\t"))
-   column.sort()
-   print(column)    
-   f.close()
+#q2.
+
+	import re
+	pattern=r'\bB\w+'
+	text="Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better"
+	l=re.findall(pattern, text, flags=re.IGNORECASE)
+	print(l)
+
+#q3.
+     
+	import re
+	x="A, very   very; irregular_sentence"	
+	l=(" ".join(re.split('[;,_\s]+', x)))
+	print(l)
+
+#q4.
+	import re
+	tweet = '''Good advice! RT @TheNextWeb: What I would do differently if I was learning to code today http://t.co/lbwej0pxOd cc: @garybernhardt #rstats'''
+	s=re.sub('RT@TheNextWeb','','Good advice RT@TheNextWeb What I would do differently if I was learning to code today httptcolbwej0pxOd cc garybernhardt rstats')
+	s=re.sub('httptcolbwej0pxOd','','Good advice What I would do differently if I was learning to code today cc garybernhardt rstats')
+	s=re.sub('cc garybernhardt rstats','','Good advice What I would do differently if I was learning to code today cc garybernhardt rstats')
+	l=("".join(re.split('[#@.///:!]',tweet)))
+	print(s)
