@@ -1,0 +1,66 @@
+#q1.
+        from tkinter import *
+	root=Tk()
+	t=Label(root,text='hello World')
+	t.pack()
+	exit=Button(root,text='exit',\
+	    command=root.destroy)
+	exit.pack()
+	root.mainloop()
+
+#q2.
+	from tkinter import *
+	def write_hello():
+	    w = Label(root, text = "Hello. thanks for clicking")
+	    w.pack()
+	root=Tk()
+	t=Label(root,text='hello World')
+	t.pack()
+	exit=Button(root,text='exit',\
+	    command=root.destroy)
+	exit.pack()
+	click=Button(root,text='click',\
+	             command=write_hello)
+	click.pack()
+	root.mainloop()
+#q3.
+
+	 from tkinter import *
+	def write_lable():
+	    x=Label(root,text)
+	    Lable["text"]=input()
+	root=Tk()
+	app=Frame(root)
+	app.grid()
+	label=Label(app,text='this is lable')
+	label.grid()
+	exit=Button(root,text='exit',\
+	              command=root.destroy)
+	button1=Button(root,text='change',\
+	               command=write_lable)
+	exit.pack()
+	button1.pack()
+	root.mainloop()
+#q4.
+	from tkinter import *
+	def show():
+	   print("First Name: %s\nLast Name: %s" % (e1.get(), e2.get()))
+	   e1.delete(0,END)
+	   e2.delete(0,END)
+	
+	root = Tk()
+	Label(root, text="First Name").grid(row=0)
+	Label(root, text="Last Name").grid(row=1)
+
+	e1 = Entry(root)
+	e2 = Entry(root)
+	e1.insert(10,"sankalp")
+	e2.insert(10,"joshi")
+
+	e1.grid(row=0, column=1)
+	e2.grid(row=1, column=1)
+
+	Button(root, text='Quit', command=root.quit).grid(row=3, column=0, sticky=W, pady=4)
+	Button(root, text='Show', command=show).grid(row=3, column=1, sticky=W, pady=4)
+	
+	mainloop( )
