@@ -1,0 +1,44 @@
+#q1.
+   from tkinter import *
+   root = Tk()
+   f={"one": 944755852553, "two": 4568258860, "three": 48451258796, "four":5548869257}
+   s=Scrollbar(root)
+   s.pack(side=RIGHT, fill=Y)
+   fbox=Listbox(root, yscrollcommand=s.set)
+   for key in f:
+   	fbox.insert(END, key)
+   	fbox.pack(side=LEFT, fill=Y)
+   s.configure(command=dbox.yview)
+   root.mainloop()
+
+#q2.
+
+q2 from tkinter import *
+
+   root = Tk()
+   f={"one": 8785556695, "two": 54563232, \
+       "three": 3897912289, "four": 4546663265}
+   s=Scrollbar(root)
+   s.pack(side=RIGHT, fill=Y)
+   fbox=Listbox(root, yscrollcommand=s.set)
+   for key in f:
+   	fbox.insert(END, key)
+    	fbox.pack(side=LEFT, fill=Y)
+   s.configure(command=dbox.yview)
+   def add():
+   	f.update({e1.get(): e2.get()})
+    	for key in f.keys():
+        	i=key
+        	print(key)
+    	fbox.insert(END, i)
+    bottomframe = Frame(root)
+    bottomframe.pack(side=BOTTOM)
+    l = Label(bottomframe,text="Enter the name and number: ")
+    l.pack()
+    e1=Entry(bottomframe, text="Name")
+    e2=Entry(bottomframe, text="Phone No.")
+    e1.pack()
+    e2.pack()
+    b=Button(master=bottomframe, text="ADD", command=add)
+    b.pack()
+    root.mainloop()
