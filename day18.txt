@@ -1,0 +1,19 @@
+#q1.
+	import pandas as pd
+	df = pd.read_csv('https://raw.githubusercontent.com/Shreyas3108/Weather/master/weather.csv')
+	print("First 5 rows: ",df.head())
+	print("First 10 rows: ",df.head(10))
+	print("Basic statistics: ",df.describe())
+	print("Last 5 rows: ",df.tail())
+	a=df.columns[2]
+	z=df[a]
+	print("Basic statistics: ",z.describe())
+
+#q2.
+
+
+import pandas as pd
+import numpy as np
+data = {'Name':['sankalp','xyz'], 'Age':[20,21], 'mail':['snklpjsh@gmail.com','xyz@gmail.com'],'phone':[7579474474,8485586890]}
+df = pd.DataFrame(data)
+print(df)
