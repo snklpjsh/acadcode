@@ -1,0 +1,43 @@
+q1 import tweepy
+   import textblob
+   from textblob import TextBlob
+   consumer_key = ''
+   consumer_secret = ''
+   access_token = ''
+   access_token_secret = ''
+   oauth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+   oauth.set_access_token(access_token, access_token_secret)
+   api = tweepy.API(oauth)
+
+q2 import socket
+   ips=socket.gethostbyname('www.google.com')
+   print(ips)
+
+q3 import tweepy
+   import textblob
+   from textblob import TextBlob
+   consumer_key = ''
+   consumer_secret = ''
+   access_token = ''
+   access_token_secret = ''
+   oauth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+   oauth.set_access_token(access_token, access_token_secret)
+   api = tweepy.API(oauth)
+   public_tweets = api.search(q = '#India')
+   public_tweets
+
+q4 A library is a set of functions and classes you can use in 
+   your projects by linking the library.
+   API (Application Programming Interface) is the subset of 
+   functions and classes that your library or framework exposes to your code
+
+q5 import spotify
+   import textblob
+   from textblob import TextBlob
+   consumer_key = ''
+   consumer_secret = ''
+   access_token = ''
+   access_token_secret = ''
+   oauth = spotify.OAuthHandler(consumer_key, consumer_secret)
+   oauth.set_access_token(access_token, access_token_secret)
+   api = spotify.API(oauth
